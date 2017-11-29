@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="mihalek.mazegame.StatsChoose">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:text="Level 2"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:layout_marginEnd="44dp"
+        android:onClick="button2"
+        android:layout_above="@+id/button4"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:text="Level 3"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="272dp"
+        android:onClick="button3"
+        android:layout_marginBottom="103dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/button1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:text="Level 4"
+        tools:layout_editor_absoluteX="221dp"
+        tools:layout_editor_absoluteY="272dp"
+        android:onClick="button4"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_alignTop="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="88dp"
+        android:layout_height="95dp"
+        android:text="Level 1"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="115dp"
+        android:onClick="button1"
+        android:layout_above="@+id/button3"
+        android:layout_toStartOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="252dp"
+        android:layout_height="74dp"
+        android:layout_above="@+id/clean"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginEnd="54dp"
+        android:text="  Choose Map"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="84dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <Button
+        android:id="@+id/clean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Clean Stats"
+        android:onClick="clean"
+        android:layout_marginEnd="25dp"
+        android:layout_above="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+</RelativeLayout>
